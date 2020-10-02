@@ -1,0 +1,17 @@
+version: '3'
+services:
+  tbu:
+   container_name: tbu
+   image: nick147/tbu:latest
+   restart: always
+   ports:
+   - 8010:8010
+  generator:
+   container_name: generator
+   image: nick147/generator:latest
+   restart: always
+   ports:
+   - 8078:8078
+
+
+
