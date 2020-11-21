@@ -1,0 +1,25 @@
+#spring:
+#  kafka:
+#    bootstrap-servers:
+#      - 178.128.205.221:9092
+server:
+  port: 8095
+spring:
+  application:
+    name: data-service
+network:
+  kafka-address: 178.128.205.221:9092
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds : 5
+    serviceUrl:
+      defaultZone: http://134.209.239.240:8082/eureka/
+
+  
+#server.port=8085
+#spring.application.name=data-service
+
+#eureka.client.region = default
+#eureka.client.registryFetchIntervalSeconds = 5
+#eureka.client.serviceUrl.defaultZone=http://134.209.239.240:8082/eureka/
